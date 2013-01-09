@@ -2,7 +2,7 @@ blockabutton
 ============
 
 jQuery plugin to enhance links by making their entire parent clickable.
-
+```
 Example with default values:
     $('a#important-link').blockabutton({
         // Overlay not included in base markup so only applied when inited.
@@ -19,4 +19,4 @@ Example with default values:
         // Number of levels to traverse up the DOM
         goUp: 1
     });
-
+```
