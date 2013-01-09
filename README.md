@@ -19,3 +19,4 @@ Example with default values:
         // Number of levels to traverse up the DOM
         goUp: 1
     });
+
