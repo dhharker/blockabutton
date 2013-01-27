@@ -39,7 +39,7 @@
  *  - thanks!
  **/
 
-;(function($){
+(function($){
     $.fn.extend({
         blockabutton: function(options) {
             this.defaults = {
@@ -60,6 +60,8 @@
             var settings = $.extend({}, this.defaults, options);
             return this.each(function() {
                 var $this = $(this);
+                if ($this.is('.blabd')) return;
+                $this.addClass ('blabd');
                 var $container = $(this), toGoUp = settings.goUp;
                 while (toGoUp-- > 0) $container = $container.parent();
                 var myHref = "";
@@ -160,4 +162,4 @@
             });
         }
     });
-})(jQuery);
+}(jQuery));
